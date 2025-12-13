@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+/* Google Sans Font */
+@font-face {
+  font-family: 'Google Sans';
+  src: url('/src/assets/fonts/GoogleSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('/src/assets/fonts/GoogleSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('/src/assets/fonts/GoogleSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --color-dark-bg: #0f0f0f;
+  --color-dark-card: #1a1a1a;
+  --color-dark-elevated: #242424;
+  --font-sans: 'Google Sans', system-ui, -apple-system, sans-serif;
+}
