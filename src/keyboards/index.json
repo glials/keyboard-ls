@@ -1,0 +1,18 @@
+{
+  "keyboards": [
+    {
+      "id": "logitech-k380",
+      "name": "Logitech K380",
+      "template": "logitech-k380.html",
+      "vendorId": "046d",
+      "productIds": ["b342", "4024"],
+      "default": true
+    },
+    {
+      "id": "standard-tkl",
+      "name": "Standard TKL",
+      "template": "standard-tkl.html",
+      "default": false
+    }
+  ]
+}

@@ -28,3 +28,94 @@
   --color-dark-elevated: #242424;
   --font-sans: 'Google Sans', system-ui, -apple-system, sans-serif;
 }
+
+body {
+  font-family: 'Google Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Logitech K380 Style Keyboard Keys */
+.key {
+  @apply bg-neutral-600 
+         flex items-center justify-center
+         text-xs font-normal text-gray-200
+         cursor-pointer transition-all duration-100
+         hover:bg-neutral-500
+         select-none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.key:not(.key-large) {
+  border-radius: 50%;
+}
+
+.key:not(.arrow-key) {
+  min-width: 50px;
+  height: 50px;
+}
+
+.key.arrow-key {
+  border-radius: 30px;
+}
+
+.key:active,
+.key.active {
+  @apply bg-blue-500 scale-95;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.key-rounded {
+  border-radius: 50%;
+}
+
+/* Small function keys */
+.key-small {
+  min-width: 42px;
+  height: 42px;
+  @apply text-[10px];
+}
+
+/* Special key widths */
+.key-backspace {
+  min-width: 98px;
+  border-radius: 25px;
+}
+
+.key-tab {
+  min-width: 72px;
+  border-radius: 25px;
+}
+
+.key-caps {
+  min-width: 88px;
+  border-radius: 25px;
+}
+
+.key-enter {
+  min-width: 98px;
+  border-radius: 25px;
+}
+
+.key-shift {
+  min-width: 115px;
+  border-radius: 28px;
+}
+
+.key-bottom {
+  min-width: 58px;
+  border-radius: 25px;
+  @apply text-[10px];
+}
+
+.key-spacebar {
+  min-width: 310px;
+  border-radius: 30px;
+}
+
+.modifier-key {
+  @apply bg-neutral-700 font-medium;
+}
+
+/* Arrow key positioning - for T-shape layout */
+.arrow-up {
+  transform: translateY(-50%);
+}
