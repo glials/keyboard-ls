@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body class="bg-neutral-800 text-gray-100 min-h-screen">
+
+    <div class="fixed top-0 right-0 z-50 flex items-center gap-1 p-2">
+      <button
+        id="titlebar-minimize"
+        class="w-10 h-8 flex items-center justify-center hover:bg-neutral-700 rounded transition-colors"
+        aria-label="Minimize">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 13H5v-2h14v2z"/>
+        </svg>
+      </button>
+
+      <button
+        id="titlebar-maximize"
+        class="w-10 h-8 flex items-center justify-center hover:bg-neutral-700 rounded transition-colors"
+        aria-label="Maximize">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M5 5h14v14H5V5zm2 2v10h10V7H7z"/>
+        </svg>
+      </button>
+
+      <button
+        id="titlebar-close"
+        class="w-10 h-8 flex items-center justify-center hover:bg-red-600 rounded transition-colors"
+        aria-label="Close">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div data-tauri-drag-region class="fixed top-0 left-0 right-0 h-12 z-40"></div>
+
     <div class="p-8">
       <h1 class="text-2xl font-bold">Keyboard Layout Switcher</h1>
       <p class="text-gray-400 mt-2">Dark theme test</p>
