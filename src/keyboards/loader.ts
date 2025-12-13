@@ -34,7 +34,7 @@ export class KeyboardLoader {
     }
 
     try {
-      const response = await fetch('/src/keyboards/index.json');
+      const response = await fetch('/src/keyboards/templates/index.json');
       if (!response.ok) {
         throw new Error(`Failed to load keyboard index: ${response.statusText}`);
       }
@@ -77,7 +77,7 @@ export class KeyboardLoader {
       }
 
       // Fetch the HTML template file
-      const response = await fetch(`/src/keyboards/${keyboard.id}/keyboard.html`);
+      const response = await fetch(`/src/keyboards/templates/${keyboard.id}/keyboard.html`);
       if (!response.ok) {
         throw new Error(`Failed to load template: ${response.statusText}`);
       }
