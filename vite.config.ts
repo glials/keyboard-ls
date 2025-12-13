@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   clearScreen: false,
@@ -6,6 +7,9 @@ export default defineConfig({
     port: 1420,
     strictPort: true,
   },
+  plugins: [
+    tailwindcss(),
+  ],
   envPrefix: ['VITE_', 'TAURI_'],
   build: {
     target: ['es2021', 'chrome100', 'safari13'],
