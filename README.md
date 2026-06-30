@@ -1,12 +1,8 @@
-<br />
-
 <p align="center">
   <img src="logo.png" />
 </p>
 
-<center>
-A desktop app for viewing and exploring keyboard layouts. Built with <a href="https://v2.tauri.app" target="_blank">Tauri 2</a>, <a href="https://vite.dev" target="_blank">Vite</a>, TypeScript, and Tailwind CSS.
-</center>
+<p align="center">A desktop app for viewing and exploring keyboard layouts.</p>
 
 ## Prerequisites
 
@@ -164,3 +160,9 @@ For more help, see the [Tauri troubleshooting guide](https://v2.tauri.app/develo
 ## Recommended IDE setup
 
 - [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+
+<hr />
+
+<center>
+Built with <a href="https://v2.tauri.app" target="_blank">Tauri 2</a>, <a href="https://vite.dev" target="_blank">Vite</a>, TypeScript, and Tailwind CSS.
+</center>

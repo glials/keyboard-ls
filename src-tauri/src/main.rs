@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    keyboard_ls_lib::run()
+    switch_keys_lib::run()
 }
